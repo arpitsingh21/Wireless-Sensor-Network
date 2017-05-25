@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/robohand"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <com.example.roboticarm.RotaryKnobView
+            android:id="@+id/elbow"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="75dp"
+            android:src="@drawable/knob" />
+
+        <TextView
+            android:id="@+id/elb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="23dp"
+            android:text="0" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp" >
+
+        <com.example.roboticarm.RotaryKnobView
+            android:id="@+id/gripper"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/knob" />
+
+        <com.example.roboticarm.RotaryKnobView
+            android:id="@+id/wrist"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="88dp"
+            android:layout_toRightOf="@+id/gripper"
+            android:src="@drawable/knob" />
+
+        <TextView
+            android:id="@+id/gri"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="36dp"
+            android:layout_toRightOf="@+id/gripper"
+            android:text="0" />
+
+        <TextView
+            android:id="@+id/wri"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="31dp"
+            android:layout_toRightOf="@+id/wrist"
+            android:text="0" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <com.example.roboticarm.RotaryKnobView
+            android:id="@+id/shoulder"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="142dp"
+            android:src="@drawable/knob" />
+
+        <com.example.roboticarm.RotaryKnobView
+            android:id="@+id/base"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/knob" />
+
+        <TextView
+            android:id="@+id/sho"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/shoulder"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="90dp"
+            android:text="0" />
+
+        <TextView
+            android:id="@+id/bas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/shoulder"
+            android:layout_marginRight="23dp"
+            android:layout_toLeftOf="@+id/base"
+            android:text="0" />
+
+    </RelativeLayout>
+
+</LinearLayout>

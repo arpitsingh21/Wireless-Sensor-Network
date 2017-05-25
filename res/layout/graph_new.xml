@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000000" >
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_weight="50"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/Button01"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="1"
+                android:textColor="#ffffff"
+                android:textSize="10dp" />
+
+            <Button
+                android:id="@+id/Button02"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="2"
+                android:textColor="#ffffff"
+                android:textSize="10dp" />
+
+            <Button
+                android:id="@+id/Button03"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="3"
+                android:textColor="#ffffff"
+                android:textSize="10dp" />
+
+            <Button
+                android:id="@+id/Button04"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="4"
+                android:textColor="#ffffff"
+                android:textSize="10dp" />
+
+            <Button
+                android:id="@+id/Button05"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="5"
+                android:textColor="#ffffff"
+                android:textSize="10dp" />
+
+            <Button
+                android:id="@+id/Button06"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="6"
+                android:textColor="#ffffff"
+                android:textSize="10dp" />
+
+            <Button
+                android:id="@+id/Button07"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="7"
+                android:textColor="#ffffff"
+                android:textSize="10dp" />
+
+            <Button
+                android:id="@+id/Button08"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="8"
+                android:textColor="#ffffff"
+                android:textSize="10dp" />
+        </LinearLayout>
+    </GridLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <LinearLayout
+        android:id="@+id/Graph"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="15"
+        android:orientation="vertical" />
+
+    <LinearLayout
+        android:id="@+id/LL2"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="85"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/Save"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:text="Save Data"
+            android:textColor="#ffffff"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/tvBluetooth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:text="Bluetooth"
+            android:textSize="15dp" 
+            android:textColor="#ffffff"/>
+
+        <Button
+            android:id="@+id/bConnect"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:text="Connect"
+            android:textSize="10dp" 
+            android:textColor="#ffffff"/>
+
+        <Button
+            android:id="@+id/bDisconnect"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:text="Disconnect"
+            android:textSize="10dp" 
+            android:textColor="#ffffff"/>
+        
+        <TextView
+            android:id="@+id/tvControl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:text="Control"
+            android:textSize="15dp"
+            android:textColor="#ffffff" />
+
+        <ToggleButton
+            android:id="@+id/tbScroll"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:checked="true"
+            android:textOff="Auto Scroll X"
+            android:textOn="Auto Scroll X"
+            android:textColor="#ffffff" />
+
+
+        <Button
+            android:id="@+id/all"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:text="All Graphs"
+            android:textSize="10dp" 
+            android:textColor="#ffffff"/>
+
+        <TextView
+            android:id="@+id/devicedata"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+             />
+
+    </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
